@@ -1,3 +1,15 @@
+var price;
+var quantity;
+var total;
+
+price = 7;
+quantity = 8;
+total = price * quantity;
+
+var el = document.getElementById('cost');
+el.textContent = total + ' pln'.toUpperCase();
+
+/*
 // Create three variables to store the information needed.
 var price;
 var quantity;
@@ -13,8 +25,8 @@ total = price * quantity;
 var el = document.getElementById('cost');
 el.textContent = '$' + total;
 
-/* 
+/!*
 NOTE: textContent does not work in IE8 or earlier
 You can use innerHTML, but note the security issues on p228-231
 el.innerHTML = '$' + total;
-*/
+*!/*/

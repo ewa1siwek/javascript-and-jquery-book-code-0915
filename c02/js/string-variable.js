@@ -1,3 +1,15 @@
+var username;
+var message;
+
+username = 'ewa';
+message = 'this is our world';
+
+var elName = document.getElementById('name');
+elName.textContent = username;
+
+var elMessage = document.getElementById('note');
+elMessage.textContent = message;
+/*
 // Create variables to hold the name and note text.
 var username;
 var message;
@@ -16,9 +28,9 @@ var elNote = document.getElementById('note');
 // Replace the content of this element.
 elNote.textContent = message;
 
-/* 
+/!*
 NOTE: textContent does not work in IE8 or earlier
 You can use innerHTML, but note the security issues on p228-231
 elName.innerHTML = username;
 elNote.innerHTML = message;
-*/
+*!/*/

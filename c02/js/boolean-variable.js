@@ -4,10 +4,12 @@ var shipping;
 inStock = true;
 shipping = false;
 
-var elStock = document.getElementById('stock');
-elStock.classList = inStock;
-var elShip = document.getElementById('shipping');
-elShip.classList = shipping;
+var elInStock = document.getElementById('stock');
+elInStock.className = inStock;
+
+var elShipping = document.getElementById('shipping');
+elShipping.className = shipping;
+
 
 /*
 // Create variables and assign their values

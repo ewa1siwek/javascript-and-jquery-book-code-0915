@@ -1,3 +1,17 @@
+var subtotal = (13 +1) * 5;
+var shipping = 0.5 * (13 + 1);
+
+var total = subtotal + shipping;
+
+var elSubtotal = document.getElementById('subtotal');
+elSubtotal.textContent = subtotal;
+
+var elShip = document.getElementById('shipping');
+elShip.textContent = shipping;
+
+var elTotal = document.getElementById('total');
+elTotal.textContent = total;
+/*
 // Create a variable for the subtotal and make a calculation
 var subtotal = (13 + 1) * 5; // Subtotal is 70
 
@@ -17,10 +31,10 @@ elShip.textContent = shipping;
 var elTotal = document.getElementById('total');
 elTotal.textContent = total;
 
-/* 
+/!*
 NOTE: textContent does not work in IE8 or earlier
 You can use innerHTML on lines 12, 15, and 18 but note the security issues on p228-231
 elSub.innerHTML = subtotal;
 elShip.innerHTML = shipping;
 elTotal.innerHTML = total;
-*/
+*!/*/

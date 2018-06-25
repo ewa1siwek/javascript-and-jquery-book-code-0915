@@ -1,3 +1,33 @@
+var greetings = 'Hello, ';
+var name = 'Ewa';
+var message = ', please check your order:';
+var welcome = greetings + name + message;
+
+var sign = "Montague House";
+var tiles = sign.length;
+var subtotal = tiles * 5;
+var shipping = 7;
+var grandTotal = subtotal + shipping;
+
+var el = document.getElementById('greeting');
+el.textContent = welcome;
+
+var elSign = document.getElementById('userSign');
+elSign.textContent = sign;
+
+var elTiles = document.getElementById('tiles');
+elTiles.textContent = tiles;
+
+var elSubtotal = document.getElementById('subTotal');
+elSubtotal.textContent = '$' + subtotal;
+
+var elShip = document.getElementById('shipping');
+elShip.textContent = '$' + shipping;
+
+var elGrandTotal = document.getElementById('grandTotal');
+elGrandTotal.textContent = '$' + grandTotal;
+
+/*
 // Create variables for the welcome message
 var greeting = 'Howdy ';
 var name = 'Molly';
@@ -37,10 +67,10 @@ elShipping.textContent = '$' + shipping;
 var elGrandTotal = document.getElementById('grandTotal');
 elGrandTotal.textContent = '$' + grandTotal;
 
-/* 
+/!*
 NOTE: textContent does not work in IE8 or earlier
 You can use innerHTML instead of textContent, but note the security issues on p228-231
 
 In the first print run, line 33-34 repeated elSubTotal (rather than elShipping).
 This was fixed in later print runs and in this code sample.
-*/
+*!/*/

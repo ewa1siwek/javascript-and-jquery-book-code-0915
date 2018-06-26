@@ -1,3 +1,11 @@
+var msg = 'Sign up to receive our newsletter for 10% off!';
+function updateMessage() {
+    var el = document.getElementById('message');
+    el.textContent = msg;
+}
+updateMessage()
+
+/*
 // Create a variable called msg to hold a new message
 var msg = 'Sign up to receive our newsletter for 10% off!';
 
@@ -8,4 +16,4 @@ function updateMessage() {
 }
 
 // Call the function
-updateMessage();
+updateMessage();*/

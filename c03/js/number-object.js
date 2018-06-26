@@ -1,3 +1,4 @@
+/*
 // Create a variable to hold the number that will be used
 var originalNumber = 10.23456;
 // Create a variable to hold a message that will be shown on the page
@@ -10,4 +11,9 @@ msg += '<h2>3 digits</h2><p>' + originalNumber.toPrecision(3) + '</p>';
 // Create a variable called el to hold the element whose id attribute has a value of info
 var el = document.getElementById('info');
 // Write the message into that element
-el.innerHTML = msg;
+el.innerHTML = msg;*/
+
+var oryginalNumber = 10.23456;
+var msg = '<h2>original number</h2><p>' + oryginalNumber + '</p>';
+msg += '<h2>3 decimal places</h2><p>' + oryginalNumber.toFixed(3) + '</p>';
+msg += '<h2>3 digits</h2><p>' + oryginalNumber.toPrecision(3) + '</p>';

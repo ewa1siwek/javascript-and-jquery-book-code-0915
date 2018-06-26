@@ -1,3 +1,14 @@
+var score1 = 50;
+var score2 = 98;
+
+var highScore1 = 78;
+var highScore2 = 67;
+
+var comparison = (score1 + score2) > (highScore1 + highScore2);
+
+var el = document.getElementById('answer');
+el.innerHTML = 'New high score: ' +  comparison;
+/*
 var score1 = 90;     // Round 1 score
 var score2 = 95;     // Round 2 score
 var highScore1 = 75; // Round 1 high score
@@ -8,4 +19,4 @@ var comparison = (score1 + score2) > (highScore1 + highScore2);
 
 // Write the message into the page
 var el = document.getElementById('answer');
-el.innerHTML = 'New high score: ' + comparison;
+el.innerHTML = 'New high score: ' + comparison;*/

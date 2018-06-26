@@ -1,3 +1,14 @@
+var msg = '<h2>browser window</h2><p>width: ' + window.innerWidth + '</p>';
+msg += '<p>height: ' + window.innerHeight + '</p>';
+msg += '<h2>history</h2><p>items: ' + window.history.length + '</p>';
+msg += '<h2>screen</h2><p>width: ' + window.screen.width + '</p>';
+msg += '<p>height: ' + window.screen.height + '</p>';
+
+var el = document.getElementById('info');
+el.innerHTML = msg;
+
+window.alert('Current page: ' + window.location);
+/*
 // Create a variable called msg to hold a message that will be shown on the page
 // Find the width of the browser window, and put this in the msg variable
 var msg = '<h2>browser window</h2><p>width: ' + window.innerWidth + '</p>';
@@ -15,4 +26,4 @@ var el = document.getElementById('info');
 // Write the message into that element
 el.innerHTML = msg;
 // Find the location of the current page and display it in an alert box
-alert('Current page: ' + window.location);
+alert('Current page: ' + window.location);*/

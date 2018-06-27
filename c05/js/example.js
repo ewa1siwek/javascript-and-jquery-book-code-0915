@@ -1,3 +1,34 @@
+var list = document.getElementsByTagName('ul')[0];
+
+var newItemLast = document.createElement('li');
+var newTextLast = document.createTextNode('kalafior');
+newItemLast.appendChild(newTextLast);
+list.appendChild(newItemLast);
+
+var newItemFirst = document.createElement('li');
+var newTextFirst = document.createTextNode('jagody');
+newItemFirst.appendChild(newTextFirst);
+list.insertBefore(newItemFirst, list.firstChild);
+
+var listItems = document.querySelectorAll('li');
+
+var i;
+
+for (i = 0; i < listItems.length; i++) {
+  if (listItems.length >= 1) {
+    listItems[i].className = 'cool'
+  }
+}
+var heading = document.querySelector('h2');
+var headingText = heading.firstChild.nodeValue;
+var itemsNumber = listItems.length;
+
+var newText = headingText + ': ' + itemsNumber;
+
+heading.innerHTML = newText;
+
+
+/*
 // ADDING ITEMS TO START AND END OF LIST
 var list = document.getElementsByTagName('ul')[0];                 // Get the <ul> element
 
@@ -28,4 +59,4 @@ var heading = document.querySelector('h2');                        // h2 element
 var headingText = heading.firstChild.nodeValue;                    // h2 text
 var totalItems = listItems.length;                                 // No. of <li> elements
 var newHeading =  headingText + '<span>' + totalItems + '</span>'; // Content
-heading.innerHTML = newHeading;                                    // Update h2 using innerHTML (not textContent) because it contains markup
+heading.innerHTML = newHeading;                                    // Update h2 using innerHTML (not textContent) because it contains markup*/

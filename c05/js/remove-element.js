@@ -1,3 +1,4 @@
+/*
 // Store the element to be removed in a variable.
 var removeEl = document.getElementsByTagName('li')[3];
 
@@ -5,4 +6,10 @@ var removeEl = document.getElementsByTagName('li')[3];
 var containerEl = document.getElementsByTagName('ul')[0];
 
 // Remove the element.
-containerEl.removeChild(removeEl);
+containerEl.removeChild(removeEl);*/
+
+var remobveEl = document.getElementsByTagName('li')[2];
+
+var containerEl = document.getElementsByTagName('ul')[0];
+
+containerEl.removeChild(remobveEl);

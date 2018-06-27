@@ -8,8 +8,8 @@ var containerEl = document.getElementsByTagName('ul')[0];
 // Remove the element.
 containerEl.removeChild(removeEl);*/
 
-var remobveEl = document.getElementsByTagName('li')[2];
+var removeEl = document.getElementsByTagName('li')[3];
 
-var containerEl = document.getElementsByTagName('ul')[0];
+var containerEl = removeEl.parentNode;
 
-containerEl.removeChild(remobveEl);
+containerEl.removeChild(removeEl);

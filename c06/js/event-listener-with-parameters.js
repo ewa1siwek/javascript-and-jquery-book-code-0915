@@ -2,7 +2,7 @@ var elUsername = document.getElementById('username');
 var elMsg = document.getElementById('feedback');
 
 function checkUsername(minLength) {
-    if (minLength < 5) {
+    if (elUsername.value.length < minLength) {
         elMsg.textContent = 'przynajmniej 4 znaki';
     } else {
         elMsg.textContent = '';

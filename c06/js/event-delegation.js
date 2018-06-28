@@ -1,4 +1,29 @@
-function getTarget(e) {                          // Declare function
+function getTarget(e) {
+    return e.target;
+}
+
+function itemDone(e) {
+    var target = getTarget(e);
+
+    if (target.nodeName.toLowerCase() == 'a') {
+        elListItems = target.parentNode;
+        elList = elListItems.parentNode;
+        elList.removeChild(elListItems);
+    }
+    if (target.nodeName.toLowerCase() == 'em') {
+        elListItems = target.parentNode.parentNode;
+        elList = elListItems.parentNode;
+        elList.removeChild(elListItems);
+    }
+    e.preventDefault();
+}
+
+var removeItemOnClick = document.getElementById('shoppingList');
+removeItemOnClick.addEventListener('click', function (e) {
+    itemDone(e);
+}, false);
+
+/*function getTarget(e) {                          // Declare function
     return e.target;               // Get the target of event
 }
 
@@ -26,7 +51,7 @@ function itemDone(e) {                           // Declare function
 var el = document.getElementById('shoppingList');// Get shopping list // If event listeners work
     el.addEventListener('click', function(e) {     // Add listener on click
         itemDone(e);                                 // It calls itemDone()
-    }, false);                                     // Use bubbling phase for flow
+    }, false);                                     // Use bubbling phase for flow*/
 /*
 
 function getTarget(e) {                          // Declare function

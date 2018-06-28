@@ -1,4 +1,22 @@
-function checkUsername() {                        // Declare function
+var el = document.getElementById('username');
+var elMsg = document.getElementById('feedback');
+
+function checkUsername(minLength) {
+    if (el.value.length < minLength) {
+      elMsg.className = 'warning';
+      elMsg.innerText = 'Minimum ' + minLength + ' characters';
+    }
+}
+function tipUsername(){
+  elMsg.className = 'tip';
+  elMsg.innerText = 'Jeszcze za krótkie'
+}
+
+el.addEventListener('focus', function () {
+    checkUsername(5)
+}, false);
+el.addEventListener('blur', tipUsername, false);
+/*function checkUsername() {                        // Declare function
   var username = el.value;                        // Store username in variable
   if (username.length < 5) {                      // If username < 5 characters
     elMsg.className = 'warning';                  // Change class on message
@@ -18,7 +36,7 @@ var elMsg = document.getElementById('feedback');  // Element to hold message
 
 // When the username input gains / loses focus call functions above:
 el.addEventListener('focus', tipUsername, false); // focus call tipUsername()
-el.addEventListener('blur', checkUsername, false);// blur call checkUsername()
+el.addEventListener('blur', checkUsername, false);// blur call checkUsername()*/
 
 /* LONGER VERSION WITH IE8 (and lower) compatibility
 

@@ -1,3 +1,24 @@
+var elUsername = document.getElementById('username');
+var elMsg = document.getElementById('feedback');
+
+function checkUsername(minLength) {
+    if (elUsername.value.length < minLength) {
+      elMsg.textContent = 'przynajmniej ' + minLength + ' znaków';
+    } else {
+      elMsg.textContent = '';
+    }
+}
+
+if (elUsername.addEventListener) {
+  elUsername.addEventListener('blur', function () {
+      checkUsername(6);
+  }, false)
+} else {
+  elUsername.attachEvent('onblur', function () {
+      checkUsername(6);
+  })
+}
+/*
 var elUsername = document.getElementById('username');  // Get username input
 var elMsg = document.getElementById('feedback');       // Get feedback element 
 
@@ -18,4 +39,4 @@ if (elUsername.addEventListener) {               // If event listener supported
   elUsername.attachEvent('onblur', function(){   // IE fallback: on blur
     checkUsername(5);                            // Call checkUsername()
   });
-}
+}*/

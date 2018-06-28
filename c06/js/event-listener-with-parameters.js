@@ -3,7 +3,7 @@ var elMsg = document.getElementById('feedback');
 
 function checkUsername(minLength) {
     if (elUsername.value.length < minLength) {
-        elMsg.textContent = 'przynajmniej 4 znaki';
+        elMsg.textContent = 'przynajmniej ' + minLength + ' znaki';
     } else {
         elMsg.textContent = '';
     }

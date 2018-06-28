@@ -1,3 +1,15 @@
+function checkUsername() {
+    var msg = document.getElementById('feedback');
+    if (this.value.length < 5) {
+      msg.textContent = 'przymajmniej 5 znaków'
+    } else {
+      msg.textContent = ''
+    }
+}
+
+var elUsername = document.getElementById('username');
+elUsername.addEventListener('blur', checkUsername, false);
+/*
 function checkUsername() {                             // Declare function
   var elMsg = document.getElementById('feedback');     // Get feedback element
   if (this.value.length < 5) {                         // If username too short
@@ -9,4 +21,4 @@ function checkUsername() {                             // Declare function
 
 var elUsername = document.getElementById('username');  // Get username input
 // When it loses focus call checkUsername()
-elUsername.addEventListener('blur', checkUsername, false);
+elUsername.addEventListener('blur', checkUsername, false);*/

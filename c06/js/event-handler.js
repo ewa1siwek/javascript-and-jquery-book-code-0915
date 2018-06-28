@@ -1,6 +1,6 @@
 function checkUsername() {
     var msg = document.getElementById('feedback');
-    if (this.value.length < 5) {
+    if (elUsername.value.length < 5) {
       msg.textContent = 'Username must be 5 characters or more;'
     } else {
       msg.textContent = '';

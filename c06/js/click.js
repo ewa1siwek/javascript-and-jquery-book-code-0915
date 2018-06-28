@@ -11,9 +11,7 @@ function dismissNote() {
     document.body.removeChild(elNote)
 }
 
-
-var elClose = document.getElementById('close');
-elClose.addEventListener('click', dismissNote, false);
+elNote.addEventListener('click', dismissNote, false);
 
 /*
 // Create the HTML for the message
